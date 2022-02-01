@@ -29,7 +29,7 @@ plt.plot(shallowerCurvexpoints, shallowerCurveypoints, label = "shallower = " + 
 plt.grid()
 plt.legend()
 
-plt.errorbar(xpoints, ypoints, xerr=ypoints*0.011 , fmt='.k')
+plt.errorbar(xpoints, ypoints, xerr=xpoints*0.011 , fmt='.k')
 
 plt.show()
 
