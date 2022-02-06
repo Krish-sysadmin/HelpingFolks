@@ -1,17 +1,13 @@
-
 file_name = input("Enter file name: ")
 hand_file = open(file_name)
+count, tot_num = 0, 0
 
-count = 0
-tot_num = 0
 for line in hand_file:
 
     if line.startswith("X-DSPAM-Confidence:"):
-        count = count + 1
+        count += 1
         print(line)
-        new_line = line.split()
-        dex_line = float(new_line[1])
-        tot_num += dex_line
+        tot_num += float(line.split()[1])
     else:
         continue
 
