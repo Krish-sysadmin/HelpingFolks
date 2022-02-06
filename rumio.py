@@ -15,7 +15,6 @@ for line in hand_file:
         sum_num.append(dex_line)
         tot_num = sum(sum_num)
     else:
-        print("Doesn't")
         continue
 
 print(float(tot_num))
