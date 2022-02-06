@@ -3,7 +3,6 @@ hand_file = open(file_name)
 count, tot_num = 0, 0
 
 for line in hand_file:
-
     if line.startswith("X-DSPAM-Confidence:"):
         count += 1
         print(line)
